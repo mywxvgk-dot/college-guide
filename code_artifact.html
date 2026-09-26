@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دليل التقديم - الكلية التربوية المفتوحة / فرع أبي غريب الدراسي</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&family=Amiri:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        cairo: ['Cairo', 'sans-serif'],
+                        amiri: ['Amiri', 'serif'],
+                    },
+                    colors: {
+                        royal: {
+                            50: '#f0f5ff',
+                            100: '#e0ecff',
+                            500: '#3366cc',
+                            600: '#2554b8',
+                            700: '#1b4096',
+                            800: '#153275',
+                            900: '#0f2454',
+                        },
+                        violetTheme: {
+                            50: '#faf5ff',
+                            100: '#f3e8ff',
+                            200: '#e9d5ff',
+                            600: '#7c3aed',
+                            700: '#6d28d9',
+                            800: '#5b21b6',
+                            900: '#4c1d95',
+                        },
+                        goldTheme: {
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #f7f8fc;
+            background-image: radial-gradient(at 0% 0%, rgba(124, 58, 237, 0.05) 0px, transparent 50%),
+                              radial-gradient(at 100% 100%, rgba(37, 84, 184, 0.06) 0px, transparent 50%);
+        }
+        .flower-pattern {
+            background-color: #ffffff;
+            border: 2px solid #e0c878;
+            box-shadow: 0 10px 30px -5px rgba(109, 40, 217, 0.1);
+        }
+        .header-gradient {
+            background: linear-gradient(135deg, #2e1065 0%, #1e1b4b 50%, #1e3a8a 100%);
+        }
+        .card-hover {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        .ornament-border {
+            border-image: linear-gradient(to right, #d97706, #7c3aed, #2563eb) 1;
+        }
+        @media print {
+            .no-print {
+                display: none !important;
+            }
+            body {
+                background: white !important;
+            }
+            .page-break {
+                page-break-before: always;
+            }
+        }
+    </style>
+</head>
+<body class="text-slate-800 antialiased min-h-screen flex flex-col justify-between">
+
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-purple-100 shadow-sm no-print">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-purple-700 to-indigo-600 flex items-center justify-center text-white shadow-md">
+                    <i class="fa-solid fa-graduation-cap text-lg"></i>
+                </div>
+                <div>
+                    <h1 class="text-sm md:text-base font-bold text-slate-800">الكلية التربوية المفتوحة</h1>
+                    <p class="text-xs text-purple-700 font-semibold">فرع أبي غريب الدراسي</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-2">
+                <button onclick="window.print()" class="px-3.5 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs md:text-sm font-semibold flex items-center gap-2 transition">
+                    <i class="fa-solid fa-print"></i>
+                    <span>طباعة الدليل</span>
+                </button>
+                <a href="#circular-modal" onclick="toggleModal(true)" class="px-3.5 py-1.5 rounded-lg bg-purple-700 hover:bg-purple-800 text-white text-xs md:text-sm font-semibold flex items-center gap-2 shadow-sm transition">
+                    <i class="fa-solid fa-file-contract"></i>
+                    <span>كتاب الإعفاء الوزاري</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-6 md:py-10 space-y-10 flex-grow">
+        
+        <!-- Main Banner -->
+        <section class="flower-pattern rounded-3xl overflow-hidden p-6 md:p-10 relative">
+            <div class="absolute top-0 right-0 w-32 h-32 md:w-48 md:h-48 bg-purple-200/40 rounded-full blur-2xl -mr-10 -mt-10 pointer-events-none"></div>
+            <div class="absolute bottom-0 left-0 w-32 h-32 md:w-48 md:h-48 bg-blue-200/40 rounded-full blur-2xl -ml-10 -mb-10 pointer-events-none"></div>
+
+            <div class="text-center space-y-4 relative z-10">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-purple-100 text-purple-900 border border-purple-200 text-xs md:text-sm font-bold">
+                    <i class="fa-solid fa-award text-amber-500"></i>
+                    <span>جمهورية العراق - وزارة التربية</span>
+                </div>
+                
+                <h1 class="text-2xl sm:text-3xl md:text-5xl font-extrabold text-slate-900 tracking-tight leading-snug">
+                    دليل تعليمات وشروط التقديم
+                    <span class="block mt-2 text-transparent bg-clip-text bg-gradient-to-r from-purple-700 via-indigo-600 to-blue-600">
+                        للكلية التربوية المفتوحة / فرع أبي غريب
+                    </span>
+                </h1>
+
+                <div class="flex flex-wrap justify-center items-center gap-3 pt-2">
+                    <span class="inline-block bg-amber-500/10 text-amber-800 border border-amber-300 font-bold px-4 py-1.5 rounded-xl text-sm md:text-base">
+                        <i class="fa-regular fa-calendar-check ml-1.5"></i> للعام الدراسي (2026 – 2027)
+                    </span>
+                    <span class="inline-block bg-blue-50 text-blue-800 border border-blue-200 font-semibold px-4 py-1.5 rounded-xl text-sm">
+                        <i class="fa-solid fa-location-dot ml-1 text-red-500"></i> بغداد - أبي غريب - شارع الزيتون
+                    </span>
+                </div>
+
+                <!-- Navigation Quick Pills -->
+                <div class="flex flex-wrap justify-center gap-2 pt-4 no-print">
+                    <a href="#section-1" class="px-3 py-1.5 rounded-lg bg-white border border-slate-200 text-xs md:text-sm text-slate-700 hover:border-purple-500 hover:text-purple-700 font-semibold transition shadow-sm">المحور الأول: الشروط</a>
+                    <a href="#section-2" class="px-3 py-1.5 rounded-lg bg-white border border-slate-200 text-xs md:text-sm text-slate-700 hover:border-purple-500 hover:text-purple-700 font-semibold transition shadow-sm">المحور الثاني: الأقسام</a>
+                    <a href="#section-3" class="px-3 py-1.5 rounded-lg bg-white border border-slate-200 text-xs md:text-sm text-slate-700 hover:border-purple-500 hover:text-purple-700 font-semibold transition shadow-sm">المحور الثالث: آلية التقديم</a>
+                    <a href="#section-4" class="px-3 py-1.5 rounded-lg bg-white border border-slate-200 text-xs md:text-sm text-slate-700 hover:border-purple-500 hover:text-purple-700 font-semibold transition shadow-sm">المحور الرابع: الفئات المشمولة</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-gradient-to-r from-emerald-900 via-teal-800 to-cyan-900 text-white rounded-2xl p-5 md:p-7 shadow-lg border border-teal-600/30 flex flex-col md:flex-row items-center justify-between gap-5">
+            <div class="flex items-start gap-4">
+                <div class="w-12 h-12 rounded-xl bg-white/10 flex-shrink-0 flex items-center justify-center text-emerald-300 text-2xl border border-white/20">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <div>
+                    <div class="inline-block bg-emerald-500/30 text-emerald-200 text-xs font-bold px-2.5 py-0.5 rounded-full mb-1.5">إعمام رسمي ملزم</div>
+                    <h3 class="text-base md:text-lg font-bold text-white leading-relaxed">استثناء طلبة الكلية التربوية المفتوحة من شرط الإجازات الدراسية</h3>
+                    <p class="text-xs md:text-sm text-teal-100 mt-1 max-w-3xl leading-relaxed">
+                        بموجب كتاب وزارة التربية ذي العدد (٤ / ع / ٢٨٦٨)، يحق لجميع المعلمين المقبولين الدراسة أثناء الوظيفة مع منح المتقدم <strong>تفرغاً ليوم واحد فقط أسبوعياً</strong> دون الحاجة إلى إجازة دراسية رسمية.
+                    </p>
+                </div>
+            </div>
+            <button onclick="toggleModal(true)" class="flex-shrink-0 px-4 py-2.5 rounded-xl bg-emerald-400 hover:bg-emerald-300 text-slate-950 font-bold text-xs md:text-sm transition flex items-center gap-2 shadow-md">
+                <i class="fa-regular fa-file-lines"></i>
+                <span>قراءة نص الإعمام</span>
+            </button>
+        </section>
+
+        <section id="section-1" class="space-y-6 pt-4">
+            <div class="flex items-center justify-between border-b pb-4 border-purple-200">
+                <div>
+                    <span class="text-xs font-bold tracking-wider text-purple-700 uppercase bg-purple-100 px-3 py-1 rounded-full">المحور الأول</span>
+                    <h2 class="text-xl md:text-2xl font-black text-slate-900 mt-1">شروط القبول في الكلية التربوية المفتوحة (2026 – 2027)</h2>
+                </div>
+                <div class="hidden sm:block text-purple-600 font-extrabold text-2xl">
+                    <i class="fa-solid fa-list-check"></i>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                
+                <!-- Rule 1 -->
+                <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm card-hover flex gap-4 items-start">
+                    <span class="w-9 h-9 rounded-xl bg-purple-600 text-white font-bold flex items-center justify-center flex-shrink-0 text-base shadow">١</span>
+                    <div>
+                        <h4 class="font-bold text-slate-800 text-base mb-1">الصفة الوظيفية</h4>
+                        <p class="text-sm text-slate-600 leading-relaxed">يحق لمن يحمل صفة (معلم) التقديم إلى الكلية التربوية المفتوحة.</p>
+                    </div>
+                </div>
+
+                <!-- Rule 2 -->
+                <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm card-hover flex gap-4 items-start">
+                    <span class="w-9 h-9 rounded-xl bg-purple-600 text-white font-bold flex items-center justify-center flex-shrink-0 text-base shadow">٢</span>
+                    <div>
+                        <h4 class="font-bold text-slate-800 text-base mb-1">خريجو معاهد المعلمين</h4>
+                        <p class="text-sm text-slate-600 leading-relaxed">يتم القبول بناءً على تخصصهم الأول، أو بحسب المادة التي يمارس تدريسها في حال كان التخصص المتخرج منه (عام) بعد الحصول على تأييد المدرسة وقسم الإشراف التربوي، أما لخريجي المعاهد الساندة فيكون بالاختصاص المقارب بتأييد رسمي.</p>
+                    </div>
+                </div>
+
+                <!-- Rule 3 -->
+                <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm card-hover flex gap-4 items-start">
+                    <span class="w-9 h-9 rounded-xl bg-purple-600 text-white font-bold flex items-center justify-center flex-shrink-0 text-base shadow">٣</span>
+                    <div>
+                        <h4 class="font-bold text-slate-800 text-base mb-1">خريجو الإعدادية بفروعها</h4>
+                        <p class="text-sm text-slate-600 leading-relaxed">يتم قبول خريجي الإعدادية بفروعها (الأدبي، العلمي) على حسب تخصصهم الذي يمارسون تدريسه في مدارسهم، وذلك بناءً على تأييد المدرسة وقسم الإشراف التربوي في المديريات العامة للتربية.</p>
+                    </div>
+                </div>
+
+                <!-- Rule 4 -->
+                <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm card-hover flex gap-4 items-start">
+                    <span class="w-9 h-9 rounded-xl bg-purple-600 text-white font-bold flex items-center justify-center flex-shrink-0 text-base shadow">٤</span>
+                    <div>
+                        <h4 class="font-bold text-slate-800 text-base mb-1">الوقفان السني والشيعي</h4>
+                        <p class="text-sm text-slate-600 leading-relaxed">يمكن قبول (المعلمين) من خريجي إعداديات الوقف السني وإعداديات الوقف الشيعي وفق الضوابط المعتمدة.</p>
+                    </div>
+                </div>
+
+                <!-- Rule 5 -->
+                <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm card-hover flex gap-4 items-start">
+                    <span class="w-9 h-9 rounded-xl bg-purple-600 text-white font-bold flex items-center justify-center flex-shrink-0 text-base shadow">٥</span>
+                    <div>
+                        <h4 class="font-bold text-slate-800 text-base mb-1">التعليم المهني والتطبيقي</h4>
+                        <p class="text-sm text-slate-600 leading-relaxed">قبول خريجي إعداديات التعليم المهني والإعداديات التطبيقية حسب المادة التي يمارسون تدريسها، بعد تأييد التشكيل الإداري، ويشترط أن يكون التخصص منسجماً مع الفرع الإعدادي.</p>
+                    </div>
+                </div>
+
+                <!-- Rule 6 -->
+                <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm card-hover flex gap-4 items-start">
+                    <span class="w-9 h-9 rounded-xl bg-purple-600 text-white font-bold flex items-center justify-center flex-shrink-0 text-base shadow">٦</span>
+                    <div>
+                        <h4 class="font-bold text-slate-800 text-base mb-1">خريجو جهاز محو الأمية</h4>
+                        <p class="text-sm text-slate-600 leading-relaxed">قبول خريجي الجهاز التنفيذي لمحو الأمية بعد الحصول على تأييد التشكيل الإداري في المديريات العامة للتربية (ماء)، الحقل القبول، وموافقة الجهاز التنفيذي لمحو الأمية.</p>
+                    </div>
+                </div>
+
+                <!-- Rule 7 -->
+                <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm card-hover flex gap-4 items-start">
+                    <span class="w-9 h-9 rounded-xl bg-purple-600 text-white font-bold flex items-center justify-center flex-shrink-0 text-base shadow">٧</span>
+                    <div>
+                        <h4 class="font-bold text-slate-800 text-base mb-1">الإدارات المدرسية (مدير / معاون)</h4>
+                        <p class="text-sm text-slate-600 leading-relaxed">يمكن قبولهم في أقسام (العلوم التربوية والنفسية / فرع الإدارة التربوية). وإذا كان المتقدم من ذوي الاختصاصات العلمية (الرياضيات، اللغة الإنجليزية) يستثنى من التقديم إلا إذا كانت لديه خدمة إدارة لا تقل عن (٥ سنوات).</p>
+                    </div>
+                </div>
+
+                <!-- Rule 8 -->
+                <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm card-hover flex gap-4 items-start">
+                    <span class="w-9 h-9 rounded-xl bg-purple-600 text-white font-bold flex items-center justify-center flex-shrink-0 text-base shadow">٨</span>
+                    <div>
+                        <h4 class="font-bold text-slate-800 text-base mb-1">قسم معلم الصفوف الأولية</h4>
+                        <p class="text-sm text-slate-600 leading-relaxed">يمكن قبول (المعلمين) في قسم العلوم التربوية والنفسية / فرع معلم الصفوف الأولية حصراً للمعلمين الذين يمارسون تدريس الصفوف الأولية في مدارسهم، دون النظر إلى تخصصهم الأصلي.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="section-2" class="space-y-6 pt-4">
+            <div class="flex items-center justify-between border-b pb-4 border-blue-200">
+                <div>
+                    <span class="text-xs font-bold tracking-wider text-blue-700 uppercase bg-blue-100 px-3 py-1 rounded-full">المحور الثاني</span>
+                    <h2 class="text-xl md:text-2xl font-black text-slate-900 mt-1">الأقسام المتاحة للتقديم (فرع أبي غريب)</h2>
+                </div>
+                <div class="hidden sm:block text-blue-600 font-extrabold text-2xl">
+                    <i class="fa-solid fa-book-open-reader"></i>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                
+                <div class="bg-white rounded-2xl p-6 border-2 border-slate-100 hover:border-blue-500 shadow-sm card-hover flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center text-xl flex-shrink-0">
+                        <i class="fa-solid fa-quran"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-slate-800 text-lg">التربية الإسلامية</h3>
+                        <p class="text-xs text-slate-500">دراسات قرآنية وعلوم إسلامية</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 border-2 border-slate-100 hover:border-blue-500 shadow-sm card-hover flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center text-xl flex-shrink-0">
+                        <i class="fa-solid fa-palette"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-slate-800 text-lg">التربية الفنية</h3>
+                        <p class="text-xs text-slate-500">فنون تشكيلية وتربية جمالية</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 border-2 border-slate-100 hover:border-blue-500 shadow-sm card-hover flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center text-xl flex-shrink-0">
+                        <i class="fa-solid fa-language"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-slate-800 text-lg">اللغة الإنجليزية</h3>
+                        <p class="text-xs text-slate-500">لغويات وطرائق تدريس اللغة الإنجليزية</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 border-2 border-slate-100 hover:border-blue-500 shadow-sm card-hover flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-xl flex-shrink-0">
+                        <i class="fa-solid fa-dna"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-slate-800 text-lg">العلوم (علوم الحياة)</h3>
+                        <p class="text-xs text-slate-500">الأحياء والعلوم التطبيقية العامة</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 border-2 border-slate-100 hover:border-blue-500 shadow-sm card-hover flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center text-xl flex-shrink-0">
+                        <i class="fa-solid fa-feather-pointed"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-slate-800 text-lg">اللغة العربية</h3>
+                        <p class="text-xs text-slate-500">أدب ونحو وبلاغة وطرائق تدريس</p>
+                    </div>
+                </div>
+
+                <!-- Special Combined Card -->
+                <div class="bg-gradient-to-br from-amber-500/10 via-white to-amber-500/5 rounded-2xl p-6 border-2 border-amber-400 shadow-sm card-hover sm:col-span-2 lg:col-span-1">
+                    <div class="flex items-center gap-3 mb-2">
+                        <div class="w-10 h-10 rounded-xl bg-amber-500 text-white flex items-center justify-center text-lg flex-shrink-0">
+                            <i class="fa-solid fa-brain"></i>
+                        </div>
+                        <h3 class="font-bold text-slate-900 text-base">العلوم التربوية والنفسية</h3>
+                    </div>
+                    <div class="space-y-1.5 pr-2 border-r-2 border-amber-300 mr-2 mt-3">
+                        <div class="text-xs font-bold text-amber-900 flex items-center gap-1.5">
+                            <i class="fa-solid fa-circle-dot text-[10px] text-amber-600"></i>
+                            <span>الإدارة التربوية (للمدراء والمعاونين)</span>
+                        </div>
+                        <div class="text-xs font-bold text-amber-900 flex items-center gap-1.5">
+                            <i class="fa-solid fa-circle-dot text-[10px] text-amber-600"></i>
+                            <span>معلم صفوف أولية</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="section-3" class="space-y-6 pt-4">
+            <div class="flex items-center justify-between border-b pb-4 border-amber-200">
+                <div>
+                    <span class="text-xs font-bold tracking-wider text-amber-800 uppercase bg-amber-100 px-3 py-1 rounded-full">المحور الثالث</span>
+                    <h2 class="text-xl md:text-2xl font-black text-slate-900 mt-1">آلية ومواعيد ورسوم التقديم</h2>
+                </div>
+                <div class="hidden sm:block text-amber-600 font-extrabold text-2xl">
+                    <i class="fa-solid fa-money-check-dollar"></i>
+                </div>
+            </div>
+
+            <!-- Timeline Banner -->
+            <div class="rounded-2xl p-5 md:p-6 bg-gradient-to-r from-blue-700 via-indigo-700 to-purple-800 text-white shadow-md flex flex-col md:flex-row items-center justify-around gap-6 text-center md:text-right">
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-2xl bg-white/20 flex items-center justify-center text-2xl flex-shrink-0">
+                        <i class="fa-solid fa-hourglass-start"></i>
+                    </div>
+                    <div>
+                        <div class="text-xs text-blue-200">تاريخ بدء التقديم</div>
+                        <div class="text-xl md:text-2xl font-black">١ / ٧ / ٢٠٢٦</div>
+                    </div>
+                </div>
+
+                <div class="hidden md:block w-px h-12 bg-white/20"></div>
+
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-2xl bg-amber-400 text-slate-900 flex items-center justify-center text-2xl flex-shrink-0">
+                        <i class="fa-solid fa-hourglass-end"></i>
+                    </div>
+                    <div>
+                        <div class="text-xs text-blue-200">آخر موعد لانتهاء التقديم</div>
+                        <div class="text-xl md:text-2xl font-black text-amber-300">٢٣ / ١٠ / ٢٠٢٦</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Steps & Rules Grid -->
+            <div class="space-y-3">
+                
+                <div class="bg-white p-4 md:p-5 rounded-2xl border border-slate-200 shadow-sm flex items-start gap-4">
+                    <div class="w-8 h-8 rounded-lg bg-amber-100 text-amber-700 font-bold flex items-center justify-center flex-shrink-0">١</div>
+                    <div class="text-sm text-slate-700 leading-relaxed">
+                        الحصول على استمارة التقديم من خلال <strong>فرع أبي غريب الدراسي</strong> مقابل مبلغ قدره <strong>(٢٥,٠٠٠) خمسة وعشرون ألف دينار عراقي فقط</strong>، ويدفع المتقدم مبلغاً قدره <strong>(٧٥٠,٠٠٠) سبعمائة وخمسون ألف دينار عراقي فقط</strong> وعن طريق بطاقة (الماستر كارد).
+                    </div>
+                </div>
+
+                <div class="bg-white p-4 md:p-5 rounded-2xl border border-slate-200 shadow-sm flex items-start gap-4">
+                    <div class="w-8 h-8 rounded-lg bg-amber-100 text-amber-700 font-bold flex items-center justify-center flex-shrink-0">٢</div>
+                    <div class="text-sm text-slate-700 leading-relaxed">
+                        لا يحق للمتقدم المطالبة باسترداد مبلغ الأجور الدراسية المشار إليه في أعلاه إلا في حالة عدم فتح القسم الدراسي المتقدم إليه الطالب.
+                    </div>
+                </div>
+
+                <div class="bg-white p-4 md:p-5 rounded-2xl border border-slate-200 shadow-sm flex items-start gap-4">
+                    <div class="w-8 h-8 rounded-lg bg-amber-100 text-amber-700 font-bold flex items-center justify-center flex-shrink-0">٣</div>
+                    <div class="text-sm text-slate-700 leading-relaxed">
+                        لا يعد الحصول على استمارة التقديم قبولاً في الكلية، ولا يُعد ترتيب اختيارات القبول المملوءة من المتقدم ملزمة للجنة القبول.
+                    </div>
+                </div>
+
+                <div class="bg-white p-4 md:p-5 rounded-2xl border border-slate-200 shadow-sm flex items-start gap-4">
+                    <div class="w-8 h-8 rounded-lg bg-amber-100 text-amber-700 font-bold flex items-center justify-center flex-shrink-0">٤</div>
+                    <div class="text-sm text-slate-700 leading-relaxed">
+                        على المتقدم تزويد الكلية بالوثيقة المطلوبة لإتمام عملية التسجيل خلال مدة أقصاها شهر واحد من تاريخ إعلان نتائج القبول.
+                    </div>
+                </div>
+
+                <div class="bg-white p-4 md:p-5 rounded-2xl border border-slate-200 shadow-sm flex items-start gap-4">
+                    <div class="w-8 h-8 rounded-lg bg-amber-100 text-amber-700 font-bold flex items-center justify-center flex-shrink-0">٥</div>
+                    <div class="text-sm text-slate-700 leading-relaxed">
+                        للمتقدم الحق في التقديم إلى مركز دراسي آخر في حالة عدم فتح فرع أبي غريب الدراسي للقسم المتقدم إليه الطالب أو استرجاع المبلغ.
+                    </div>
+                </div>
+
+                <div class="bg-white p-4 md:p-5 rounded-2xl border border-slate-200 shadow-sm flex items-start gap-4">
+                    <div class="w-8 h-8 rounded-lg bg-red-100 text-red-700 font-bold flex items-center justify-center flex-shrink-0"><i class="fa-solid fa-scale-balanced text-sm"></i></div>
+                    <div class="text-sm text-slate-700 leading-relaxed font-semibold">
+                        يتحمل المتقدم كافة المسؤولية القانونية عن صحة المعلومات المثبتة في استمارة التقديم.
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="section-4" class="space-y-6 pt-4">
+            <div class="flex items-center justify-between border-b pb-4 border-indigo-200">
+                <div>
+                    <span class="text-xs font-bold tracking-wider text-indigo-800 uppercase bg-indigo-100 px-3 py-1 rounded-full">المحور الرابع</span>
+                    <h2 class="text-xl md:text-2xl font-black text-slate-900 mt-1">الفئات المشمولة والمؤهلة للتقديم</h2>
+                </div>
+                <div class="hidden sm:block text-indigo-600 font-extrabold text-2xl">
+                    <i class="fa-solid fa-users-line"></i>
+                </div>
+            </div>
+
+            <!-- Hierarchy Pyramid Representation -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                
+                <div class="bg-white p-5 rounded-2xl border-t-4 border-t-purple-600 border border-slate-200 shadow-sm text-center card-hover">
+                    <div class="w-12 h-12 mx-auto rounded-full bg-purple-100 text-purple-700 flex items-center justify-center text-xl mb-3">
+                        <i class="fa-solid fa-school"></i>
+                    </div>
+                    <h4 class="font-bold text-slate-800 text-base">المعلم في وزارة التربية</h4>
+                    <p class="text-xs text-slate-500 mt-1">الملاك الدائم لمختلف المدارس الحكومية</p>
+                </div>
+
+                <div class="bg-white p-5 rounded-2xl border-t-4 border-t-blue-600 border border-slate-200 shadow-sm text-center card-hover">
+                    <div class="w-12 h-12 mx-auto rounded-full bg-blue-100 text-blue-700 flex items-center justify-center text-xl mb-3">
+                        <i class="fa-solid fa-building-columns"></i>
+                    </div>
+                    <h4 class="font-bold text-slate-800 text-base">المعلم في المدارس الأهلية</h4>
+                    <p class="text-xs text-slate-500 mt-1">المدارس الخاصة المعتمدة والمجازة</p>
+                </div>
+
+                <div class="bg-white p-5 rounded-2xl border-t-4 border-t-emerald-600 border border-slate-200 shadow-sm text-center card-hover">
+                    <div class="w-12 h-12 mx-auto rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center text-xl mb-3">
+                        <i class="fa-solid fa-mosque"></i>
+                    </div>
+                    <h4 class="font-bold text-slate-800 text-base">معلمو الوقف السني والشيعي</h4>
+                    <p class="text-xs text-slate-500 mt-1">المدارس والتعليم الديني التابع للأوقاف</p>
+                </div>
+
+                <div class="bg-white p-5 rounded-2xl border-t-4 border-t-amber-600 border border-slate-200 shadow-sm text-center card-hover">
+                    <div class="w-12 h-12 mx-auto rounded-full bg-amber-100 text-amber-700 flex items-center justify-center text-xl mb-3">
+                        <i class="fa-solid fa-gears"></i>
+                    </div>
+                    <h4 class="font-bold text-slate-800 text-base">المدارس المهنية والأجهزة التنفيذية</h4>
+                    <p class="text-xs text-slate-500 mt-1">كوادر التعليم المهني والأجهزة المختصة</p>
+                </div>
+
+                <div class="bg-white p-5 rounded-2xl border-t-4 border-t-rose-600 border border-slate-200 shadow-sm text-center card-hover">
+                    <div class="w-12 h-12 mx-auto rounded-full bg-rose-100 text-rose-700 flex items-center justify-center text-xl mb-3">
+                        <i class="fa-solid fa-hand-holding-heart"></i>
+                    </div>
+                    <h4 class="font-bold text-slate-800 text-base">وزارة العمل والشؤون الاجتماعية</h4>
+                    <p class="text-xs text-slate-500 mt-1">المعلمون العاملون في دوائر ودور الرعاية</p>
+                </div>
+
+                <div class="bg-white p-5 rounded-2xl border-t-4 border-t-indigo-600 border border-slate-200 shadow-sm text-center card-hover">
+                    <div class="w-12 h-12 mx-auto rounded-full bg-indigo-100 text-indigo-700 flex items-center justify-center text-xl mb-3">
+                        <i class="fa-solid fa-user-tie"></i>
+                    </div>
+                    <h4 class="font-bold text-slate-800 text-base">المحاضرون والمتعاقدون</h4>
+                    <p class="text-xs text-slate-500 mt-1">المعلم بصفة محاضر أو متعاقد رسمي</p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <div id="circular-modal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden flex items-center justify-center p-3 sm:p-5">
+        <div class="bg-white w-full max-w-3xl rounded-3xl overflow-hidden shadow-2xl border border-slate-200 flex flex-col max-h-[90vh]">
+            
+            <!-- Modal Header -->
+            <div class="p-4 sm:p-5 bg-gradient-to-r from-slate-900 to-indigo-950 text-white flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <div class="w-9 h-9 rounded-xl bg-purple-500/30 flex items-center justify-center text-purple-300">
+                        <i class="fa-solid fa-stamp"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-base sm:text-lg">الكتاب الرسمي للإعمام الوزاري</h3>
+                        <p class="text-xs text-slate-400">العدد: ٤ / ع / ٢٨٦٨ - التاريخ: ٢١ / ٨ / ٢٠٢٦</p>
+                    </div>
+                </div>
+                <button onclick="toggleModal(false)" class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <!-- Modal Content -->
+            <div class="p-5 sm:p-6 overflow-y-auto space-y-4 text-sm sm:text-base leading-relaxed text-slate-700 font-sans">
+                <div class="text-center font-bold text-slate-900 pb-2 border-b border-slate-100">
+                    م/ (إعمام) التقديم إلى الكلية التربوية المفتوحة
+                </div>
+                
+                <p>
+                    في ضوء الشكاوى العدة التي وردت إلينا من قبل المعلمين المتقدمين للدراسة في الكلية التربوية المفتوحة المتضمنة امتناع بعض المديريات العامة عن المصادقة على استمارات القبول وفق ما جاء بقرارات المجلس الوزاري للاقتصاد لاسيما الفقرة (٦) في ثالثاً من قرار مجلس الوزراء رقم (١١) لسنة ٢٠٢٦...
+                </p>
+
+                <div class="bg-purple-50 border-r-4 border-purple-600 p-4 rounded-xl text-purple-950 font-semibold my-2">
+                    «ولما كان نظام الكلية التربوية المفتوحة يعتمد على الدراسة أثناء التوظيف بمنح المتقدم تفرغاً ليوم واحد فقط من دون الحاجة إلى منحه إجازة دراسية استناداً إلى شروط القبول المقرة من قبل الهيئة المركزية بحسب قانون تأسيس الكلية رقم ١٦٩ لسنة ١٩٩٨، وبهذا الصدد تقرر الآتي:
+                    <br><br>
+                    <strong>المصادقة على استمارات المتقدمين للقبول في الكلية التربوية المفتوحة التي يعتمد نظام الدراسة فيها على منح المتقدم تفرغاً ليوم واحد دون الحاجة إلى منحه إجازة دراسية وذلك لعدم شمولهم بالقيد المذكور في القرار المشار إليه آنفاً.</strong>»
+                </div>
+
+                <div class="pt-4 text-left border-t border-slate-100">
+                    <p class="font-bold text-slate-900">مهدي صالح داخل العوادي</p>
+                    <p class="text-xs text-slate-500">وكيل الوزارة للشؤون العلمية</p>
+                </div>
+            </div>
+
+            <!-- Modal Footer -->
+            <div class="p-4 bg-slate-50 border-t border-slate-200 flex justify-end">
+                <button onclick="toggleModal(false)" class="px-5 py-2 rounded-xl bg-purple-700 hover:bg-purple-800 text-white text-sm font-semibold transition">
+                    إغلاق النافذة
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-white border-t border-slate-200 mt-12 py-8 no-print">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-right">
+            
+            <div class="space-y-1">
+                <div class="font-bold text-slate-800 text-sm md:text-base">الكلية التربوية المفتوحة - فرع أبي غريب الدراسي</div>
+                <div class="text-xs text-slate-500">
+                    <i class="fa-solid fa-location-dot ml-1 text-purple-600"></i> العراق - بغداد - أبي غريب - شارع الزيتون
+                </div>
+                <div class="text-xs text-slate-500">
+                    <i class="fa-solid fa-envelope ml-1 text-purple-600"></i> ec@ec.edu.iq &nbsp;|&nbsp; 
+                    <i class="fa-solid fa-globe ml-1 text-purple-600"></i> www.ec.edu.iq
+                </div>
+            </div>
+
+            <div class="text-xs text-slate-400">
+                جميع الحقوق محفوظة © الكلية التربوية المفتوحة 2026 - 2027
+            </div>
+
+        </div>
+    </footer>
+
+    <script>
+        function toggleModal(show) {
+            const modal = document.getElementById('circular-modal');
+            if (show) {
+                modal.classList.remove('hidden');
+                document.body.classList.add('overflow-hidden');
+            } else {
+                modal.classList.add('hidden');
+                document.body.classList.remove('overflow-hidden');
+            }
+        }
+
+        // Close on ESC key or backdrop click
+        window.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') toggleModal(false);
+        });
+
+        document.getElementById('circular-modal').addEventListener('click', (e) => {
+            if (e.target.id === 'circular-modal') toggleModal(false);
+        });
+    </script>
+</body>
+</html>
